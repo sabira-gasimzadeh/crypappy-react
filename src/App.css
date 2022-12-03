@@ -150,27 +150,6 @@ body {
     border: 0.125rem solid #FFFFFF;
   }
 
-
-
-  /* [class*=-ibg] {
-    position: relative;
-  }
-  
-  [class*=-ibg] img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  [class*=-ibg_contain] img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  } */
-
 /* bütün title klasları */
   .title {
     font-style: normal;
@@ -290,8 +269,6 @@ body {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-/* reponsive zamanı görünəcək bars iconu */
-
 
 
 
@@ -454,7 +431,6 @@ body {
     display: -ms-grid;
     display: grid;
     gap: 6.25rem;
-   /* list-style: url("../img/ul.svg"); */
   }
   
   .list-mobile__img {
@@ -535,7 +511,6 @@ body {
   }
   
   .friendly__button::after {
-    /* content: url("../src/img/logo.png"); */
     position: absolute;
     right: -25%;
     top: -5px;
@@ -1133,10 +1108,6 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
-  
-    /* .hero__img {
-      max-width: 43.75rem;
-    } */
 
     .hero__img{
       display: none;
@@ -1218,7 +1189,6 @@ body {
   
     .hero__img {
       display: none;
-      /* max-width: 34.375rem; */
     }
   
   
