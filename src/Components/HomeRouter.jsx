@@ -1,4 +1,5 @@
 import React from 'react'
+import "../Components/App.css"
 import Container from './Section_hero'
 import About from './Section_about'
 import Mobile from './Section_mobile'

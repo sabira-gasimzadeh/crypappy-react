@@ -1,5 +1,3 @@
-
-import './App.css';
 import React from 'react';
 import Header from './Components/Header'
 import HomeRouter from './Components/HomeRouter';
@@ -11,7 +9,6 @@ function App() {
     <>
       <React.StrictMode>
         <Header />
-
         <Routes>
           <Route path='/' exact element={<HomeRouter />} />
         </Routes>

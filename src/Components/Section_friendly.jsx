@@ -36,7 +36,7 @@ function Friendly(){
               </div>
             </div>
             {/* <a href="" className="friendly__button button">Get CrypAppy </a> */}
-            <a className="friendly__button button" to="/contact" id='log'href="#">Get CrypAppy</a>
+            <a className="friendly__button button" to="/search" id='log' href="#">Get CrypAppy</a>
             <img src={barcode} alt="" />
           </div>
           <div className="friendly__img">

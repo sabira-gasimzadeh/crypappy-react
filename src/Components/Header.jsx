@@ -1,26 +1,11 @@
-import React, {useRef} from 'react'
+import React, {useState} from 'react'
 import logo from '../img/logo.png'
+import {ButtonStyled} from './ButtonStyled'
+import Modal from './Modal/Modal'
 
 
 const Header = () => {
-  //  const overlayRef = useRef()
-  //  const buttonRef = useRef()
-  //  const closeOverlayMenuRef = useRef()
-  //  const closeOverlayMenu = (e)=>{
-  //   const clickedElement = e.target
-  //   if(clickedElement.classList.contains('close')){
-  //     overlayRef.current.classList.remove('active')
-  //   }
-  //  }
-  //  const openOverLayMenu = (e) =>{
-  //     const clickedElement = e.target
-
-  //     if(clickedElement.classList.contains('view')){
-  //        overlayRef.current.classList.add('active')
-  //     }
-  //  }
-
-
+  const [openModal, setOpenModal] = useState(false)
   return (
    <>
     <header className="header">
@@ -40,11 +25,10 @@ const Header = () => {
               <li className="menu__item"><a href="#" className="menu__link">Contact</a></li>
             </ul>
           </nav>
-          <button type="button" data-da=".menu__body, 480" className="header__button button button-outline">Buy
-            CrypAppy</button>
-          <button type="button" className="menu__icon icon-menu"><span></span></button>
+          <ButtonStyled onClick={() => {setOpenModal(true);}}>Buy CrypAppy</ButtonStyled>
         </div>
       </div>
+      {openModal && <Modal closeModel = {setOpenModal}/> }
     </header>
  </>
   )
